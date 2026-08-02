@@ -11,9 +11,9 @@ public interface EmployeeService {
 
     List<EmployeeResponse> getAllEmployees();
 
-    EmployeeResponse getEmployeeById(Integer id);
+    EmployeeResponse getEmployeeById(Integer srNo);
 
-    EmployeeResponse updateEmployee(Integer id, EmployeeRequest request);
+    EmployeeResponse updateEmployee(Integer srNo, EmployeeRequest request);
 
-    void deleteEmployee(Integer id);
+    void deleteEmployee(Integer srNo);
 }

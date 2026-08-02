@@ -18,7 +18,8 @@ public class Employee {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int sr_no;
+    @Column(name = "sr_no")
+    private int srNo;
 
     @Column(nullable = false, unique = true)
     private String employeeCode;

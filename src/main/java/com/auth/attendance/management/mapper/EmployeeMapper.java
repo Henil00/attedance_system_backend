@@ -28,7 +28,7 @@ public class EmployeeMapper {
 
         EmployeeResponse response = new EmployeeResponse();
 
-        response.setSr_no(employee.getSr_no());
+        response.setSr_no(employee.getSrNo());
         response.setEmployeeCode(employee.getEmployeeCode());
         response.setName(employee.getName());
         response.setPhone(employee.getPhone());

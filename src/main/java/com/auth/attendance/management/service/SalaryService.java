@@ -71,7 +71,7 @@ public class SalaryService {
                 .findByEmployeeSrNoAndMonthAndYear(request.getEmployeeSrNo(), request.getMonth(), request.getYear())
                 .orElse(new SalaryReport());
 
-        report.setEmployeeSrNo(employee.getSr_no());
+        report.setEmployeeSrNo(employee.getSrNo());
         report.setEmployeeName(employee.getName());
         report.setMonth(request.getMonth());
         report.setYear(request.getYear());
